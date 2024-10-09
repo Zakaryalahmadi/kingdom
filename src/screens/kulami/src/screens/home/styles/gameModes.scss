@@ -1,0 +1,120 @@
+@use './mixins.scss' as *;
+.gameMode{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(0deg, rgba(44,40,59,1) 0%, rgba(7,11,22,1) 100%);
+    border-radius: 10px;
+    width: 20%;
+    height: 90vh;
+    margin: auto 30px;
+    box-shadow: -3px 3px 10px 3px rgba(44,40,59,1);
+}
+
+.gm-mode-selector-container{
+    margin: auto;
+    margin-top: 40px;
+    position: relative;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.gm-play-friend, .gm-tournois{
+    margin-bottom: 30px;
+    background-color: rgb(67, 63, 83);
+    margin-top: 15px;
+}
+
+.gm-play-friend, .gm-tournois,.gm-play{
+    @include normalButton(15px, 20px, 80%);
+}
+
+.gm-play{
+    @include blueButton;
+}
+
+.gm-select{
+    @include selectButton(0,0); //padding: 0
+}
+
+.gm-arrow-dropdown{
+    position: absolute;
+    right: 3px;
+    top: 7px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.gm-play:hover{
+    box-shadow:-1px 2px 19px -3px #0DA8FF;
+}
+
+.gm-mode-selector-container{
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: none;
+    color: white;
+    background-color: rgb(67, 63, 83);
+    margin-bottom: 15px;
+}
+
+
+.gm-mode-container p{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+// .gm-drag-img-content{
+//     // transform: scale(0.9);
+//     border: 1px solid red;
+//     // overflow: visible;
+//     // border: 1px solid red;
+// }
+
+// .gm-drag-img{
+//     position: absolute;
+//     transform: scale(0.9);
+//     margin: auto;
+//     margin-top: 30px;
+//     margin-bottom: 30px;
+//     width: 195px;
+//     height: 291px;
+//     // background: url('../../../assets/images/slider/6.png') no-repeat center;
+//     background-size: fit-content;
+//     border-radius: 25px;
+//     // -webkit-box-shadow: -2px 5px 19px 5px #433F53; 
+//     // box-shadow: -2px 5px 19px 5px #433F53;
+//     cursor: grab;
+// }
+
+
+// .gm-drag-img:active{
+//     cursor: grabbing;
+// }
+
+.gm-arrow-left,.gm-arrow-right{
+    cursor: pointer;
+    position: absolute;
+    border: 1px solid grey;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #433F53;
+}
+.gm-arrow-left:hover,.gm-arrow-right:hover{
+    background-color: grey;
+}
+.gm-arrow-left{
+    left: 10%;
+    top: 45%;
+}
+.gm-arrow-right{
+    right: 10%;
+    top: 45%;
+}

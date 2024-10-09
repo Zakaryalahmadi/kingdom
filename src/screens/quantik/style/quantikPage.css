@@ -1,0 +1,7 @@
+.quantikPage{
+    display: flex;
+    align-items: center;
+}
+body{
+    background-color: rgb(67, 63, 83,1);
+}

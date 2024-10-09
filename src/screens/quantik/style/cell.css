@@ -1,0 +1,94 @@
+.Area--1{
+    background-image: url('../assets/zone1.png');
+    background-size: cover;
+    width: 180px;
+    height: 180px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Area--2{
+    background-image: url('../assets/zone2.png');
+    background-size: cover;
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    left: 180px;
+    top: 0;
+}
+.Area--3{
+    background-image: url('../assets/zone2.png');
+    background-size: cover;
+    width: 180px;
+    height: 180px;
+    position: absolute;
+}
+.Area--4{
+    background-image: url('../assets/zone1.png');
+    background-size: cover;
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    left: 180px;
+    top: 180px;
+}
+
+
+
+
+.Board{
+    /* border: 1px solid red; */
+    position: relative;
+    height: 400px;
+    margin-top: 20px;
+}
+
+
+.Cell {
+    /* border: 1px solid black; */
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Cell:hover{
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+}
+  
+.X--0 {
+    left: 0;
+    
+}
+.Y--0 {
+    top: 0;
+}
+.X--1 {
+    left: 90px;
+}
+.Y--1 {
+    top: 90px;
+}
+
+.X--2 {
+    left: 0px;
+}
+.X--3 {
+    left: 90px;
+}
+.Y--3 {
+    top: 90px;
+}
+
+
+
+
+
+
+
+  

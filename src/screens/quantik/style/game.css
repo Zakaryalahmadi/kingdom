@@ -1,0 +1,65 @@
+.Game{
+    display: flex;
+    width: 100%;
+    position: relative;
+    padding-left: 300px;
+    /* border:1px solid red; */
+    height: 600px;
+}
+
+.turn{
+    text-align: center;
+    /* border: 1px solid red ; */
+    padding: 20px 20px 20px 0;
+}
+
+.reset-btn{
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    width: 100px;
+    color: white;
+    background-color: rgb(67, 63, 83);
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.Choice{
+
+    /* border: 1px solid red; */
+    padding: 25px;
+    margin-left: 500px;
+    -webkit-box-shadow: 5px 6px 28px -4px rgba(44,40,59,0.51); 
+    box-shadow: 5px 6px 28px -4px rgba(44,40,59,0.51);
+    background: linear-gradient(0deg, rgba(44,40,59,1) 0%, rgba(7,11,22,1) 100%);
+    border-radius: 10px;
+    opacity: 0;
+    transition: 0.2s all;
+    
+}
+
+
+.choixPieces{
+    /* display: flex; */
+}
+
+.pieceType{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.Controls{
+    /* position: absolute; */
+    display: flex;
+    bottom: 0;
+
+}
+
+.turn{
+    color: white;
+    font-family: arial;
+    font-size:1.4em;
+    margin-bottom: 10px;
+}

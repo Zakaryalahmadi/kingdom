@@ -1,0 +1,33 @@
+@mixin blueButton {
+    background-color: #406aff;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 20px 40px;
+    box-shadow: inset 0px -12px 21px -9px #0DA8FF;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+
+@mixin  selectButton($px:10px, $py:20px){
+    padding: $px $py;
+    outline: none;
+    border: none; 
+    background-color: rgb(67, 63, 83);
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+}
+
+@mixin normalButton($px:10px,$py:15px ,$width:100%) {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: $px $py;
+    border: none;
+    width: $width;
+    color: white;
+    background-color: rgb(67, 63, 83);
+    margin-bottom: 15px;
+}

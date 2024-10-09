@@ -1,0 +1,75 @@
+.kulamiBoard{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(0deg, rgba(44,40,59,1) 0%, rgba(7,11,22,1) 100%);
+    border-radius: 10px;
+    width: 25%;
+    height: 90vh;
+    margin: auto 30px;
+    box-shadow: -3px 3px 10px 3px rgba(44,40,59,1);
+
+}
+
+.btn-playgame{
+    background-color: #406aff;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 20px 40px;
+    width: 300px;
+    box-shadow: inset 0px -12px 21px -9px #0DA8FF;
+    transition: box-shadow 0.3s ease-in-out;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.show-result{
+    font-size: 1.4em;
+    background-color: #406aff;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 10px 20px;
+    box-shadow: inset 0px -12px 21px -9px #0DA8FF;
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+
+.dispay-score{
+    margin: auto;
+    /* border: 1px solid red; */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.btn-generate.dis, .btn-normal-map.dis{
+    /* border: 1px solid white; */
+    background-color: rgba(255, 255, 255,0.4);
+    cursor: not-allowed;
+}
+.btn-generate, .btn-normal-map{
+    margin-top: 10px;
+    /* border: 1px solid transparent; */
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    width: 300px;
+    color: white;
+    background-color: rgb(67, 63, 83);
+    margin-bottom: 15px;
+}
+
+.score{
+    background-color: rgb(67, 63, 83);
+    padding: 10px 0px 10px 0px;
+    width: 300px;
+    text-align: center;
+    font-size: 1.5em;
+    /* height: 50vh; */
+}

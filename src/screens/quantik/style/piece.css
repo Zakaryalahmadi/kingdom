@@ -1,0 +1,55 @@
+.Choice .Piece {
+    
+    margin: 15px auto auto auto;
+    cursor: pointer;
+}
+
+.Choice .Piece--notAllowed {
+    opacity: .2;
+    cursor: not-allowed;
+}
+
+.Piece--square {
+    height: 45px;
+    width: 45px;
+    
+}
+
+.Piece--triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 22px 45px 22px;
+    border-color: transparent transparent #dcf4f4 transparent;
+}
+
+.Piece--jaune.Piece--triangle {
+    border-color: transparent transparent #e8ac2b transparent;
+}
+
+.Piece--circle {
+    height: 45px;
+    width: 45px;
+    
+    border-radius: 50%;
+}
+
+.Piece--cross {
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(to bottom, transparent 35%, #dcf4f4 35%, #dcf4f4 65%,  transparent 65%),
+        linear-gradient(to right, transparent 35%, #dcf4f4 35%, #dcf4f4 65%, transparent 65%);
+}
+
+.Piece--jaune.Piece--cross {
+    background: linear-gradient(to bottom, transparent 30%, #e8ac2b 35%, #e8ac2b 65%,  transparent 65%),
+        linear-gradient(to right, transparent 35%, #e8ac2b 35%, #e8ac2b 65%, transparent 65%);
+}
+
+.Piece--blanc:not(.Piece--triangle):not(.Piece--cross) {
+    background: #dcf4f4;
+}
+
+.Piece--jaune:not(.Piece--triangle):not(.Piece--cross) {
+    background: #e8ac2b;
+}
